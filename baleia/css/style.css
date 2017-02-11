@@ -1,0 +1,102 @@
+:root {
+  --cor: #0099cc;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #76daff;
+}
+.container {
+  position: relative;
+  width: 350px;
+  height: 250px;
+}
+
+.baleia {
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  width: 150px;
+  height: 100px;
+  border-radius: 60% 100% 60% 60%;
+  background: var(--cor);;
+  -webkit-animation: gira 5s infinite;;
+          animation: gira 5s infinite;
+}
+.olho {
+  position: absolute;
+  top: 40px;
+  left: 25px;
+  width: 12px;
+  height: 12px;
+  background: #333;
+  border-radius: 100%;
+  -webkit-animation: pisca 2s infinite;
+          animation: pisca 2s infinite;
+}
+
+.calda{
+  position: absolute;
+  top: -50px;
+  left: 50px;
+  width: 100px;
+  height: 110px;
+  border-radius: 70%;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  box-shadow: 30px 25px 0 0 var(--cor);
+}
+
+.calda::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50px;
+  width: 48px;
+  height: 48px;
+  border-radius: 80%;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  box-shadow: 13px 13px 0 0 var(--cor);
+}
+@-webkit-keyframes gira {
+  10% {-webkit-transform: translate(-50px, 20px);transform: translate(-50px, 20px)}
+  30% {-webkit-transform: rotateY(10deg);transform: rotateY(10deg)}
+  30% {-webkit-transform: translateX(-150px);transform: translateX(-150px)}
+  60% {-webkit-transform: rotate(5deg);transform: rotate(5deg)}
+  50% {-webkit-transform: translate(-200px, 50px);transform: translate(-200px, 50px)}
+  50%, 55% {-webkit-transform: rotateY(180deg);transform: rotateY(180deg)}
+  65% {-webkit-transform: rotateY(15deg);transform: rotateY(15deg)}
+  80% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg)}
+  90% {-webkit-transform: rotate(5deg);transform: rotate(5deg)}
+}
+@keyframes gira {
+  10% {-webkit-transform: translate(-50px, 20px);transform: translate(-50px, 20px)}
+  30% {-webkit-transform: rotateY(10deg);transform: rotateY(10deg)}
+  30% {-webkit-transform: translateX(-150px);transform: translateX(-150px)}
+  60% {-webkit-transform: rotate(5deg);transform: rotate(5deg)}
+  50% {-webkit-transform: translate(-200px, 50px);transform: translate(-200px, 50px)}
+  50%, 55% {-webkit-transform: rotateY(180deg);transform: rotateY(180deg)}
+  65% {-webkit-transform: rotateY(15deg);transform: rotateY(15deg)}
+  80% {-webkit-transform: rotate(-5deg);transform: rotate(-5deg)}
+  90% {-webkit-transform: rotate(5deg);transform: rotate(5deg)}
+}
+
+@-webkit-keyframes pisca {
+  10% {background: #0099cc;}
+}
+
+@keyframes pisca {
+  10% {background: #0099cc;}
+}

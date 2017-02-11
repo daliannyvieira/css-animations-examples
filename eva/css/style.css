@@ -1,0 +1,161 @@
+.eve {
+  -webkit-animation-name: up;
+          animation-name: up;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.shadow {
+  -webkit-animation-name: shadow;
+          animation-name: shadow;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.arm-left {
+  -webkit-animation-name: arm-left;
+          animation-name: arm-left;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.arm-right {
+  -webkit-animation-name: arm-right;
+          animation-name: arm-right;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.eye-left {
+  -webkit-animation-name: eye-left;
+          animation-name: eye-left;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.eye-right {
+  -webkit-animation-name: eye-right;
+          animation-name: eye-right;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes up {
+  100% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+}
+
+@keyframes up {
+  100% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+}
+
+@-webkit-keyframes shadow {
+	100% {
+    -webkit-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+  }
+}
+
+@keyframes shadow {
+	100% {
+    -webkit-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+  }
+}
+
+@-webkit-keyframes arm-left {
+	100% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+}
+
+@keyframes arm-left {
+	100% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+}
+
+@-webkit-keyframes arm-right {
+	100% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+}
+
+@keyframes arm-right {
+	100% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+}
+
+@-webkit-keyframes eye-left {
+	100% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+}
+
+@keyframes eye-left {
+	100% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+}
+
+@-webkit-keyframes eye-right {
+  100% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+}
+
+@keyframes eye-right {
+  100% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+}
